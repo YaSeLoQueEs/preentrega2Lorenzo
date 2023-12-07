@@ -11,18 +11,19 @@
 }
 
 
-/*-- HEADER --*/
+/*-- NAV Boostrap --*/
+
+.navbar{ 
+    background-color: black;
+}
+
+.navbar-toggler{ 
+    background-color: white;
+}
 
 .nav-link{ 
     color: white;
-}
-
-.nav-link:hover{ 
-    color: #ffc107;
-}
-
-.bg-dark{ 
-    background-color: black !important;
+    
 }
 
 /*-- MAIN --*/
