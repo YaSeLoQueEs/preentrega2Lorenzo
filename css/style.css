@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/*-- RESET --*/
 
 *{ 
     margin: 0;
@@ -10,8 +9,7 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
-/*-- NAV Boostrap --*/
+/*--NavBoostrap--*/
 
 .navbar{ 
     background-color: black;
@@ -26,7 +24,7 @@
     
 }
 
-/*-- MAIN --*/
+/*--MAININDEXHTML--*/
 
 .masvendidos h3{ 
     color: rgb(255, 255, 255);
@@ -38,7 +36,7 @@
     width: 100%;
     height: 500px;
     text-align: center;
-    background-image: url(../img/libertycitywalkabout086-scaled.webp);
+    background-image: url(../img/index/libertycitywalkabout086-scaled.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,7 +47,7 @@
     width: 100%;
     height: 500px;
     text-align: center;
-    background-image: url(../img/libertycitywalkabout086-scaled.webp);
+    background-image: url(../img/index/libertycitywalkabout086-scaled.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,7 +58,7 @@
     width: 100%;
     height: 500px;
     text-align: center;
-    background-image: url(../img/libertycitywalkabout086-scaled.webp);
+    background-image: url(../img/index/libertycitywalkabout086-scaled.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -115,20 +113,7 @@
     height: 140%;  /*--alto--*/
 }
 
-
-/*-- FOOTER --*/
-
-footer{ 
-    background-color: rgb(0, 0, 0);
-}
-
-footer div a img{ 
-    width:50px;
-    height:50px;
-}
-
-
-/*-- BOXMODEL --*/
+/*--BOXMODEL-INDEXHTML--*/
 
 .masvendidos div{
     background-color: rgba(63, 51, 51, 0.733);
@@ -181,8 +166,7 @@ footer div a img{
     width: 80%;
 }
 
-
-/*--NOSOTROS--*/
+/*--NOSOTROSHTML--*/
 
 .mainnosotros{ 
     width: 100%;
@@ -240,6 +224,22 @@ footer div a img{
 }
 
 
+/*--GALERIAHTML--*/
+
+.fondomaingaleria{ 
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/multimedia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel-img{ 
+    text-align: center;
+    width: 50%;
+}
 
 /*--TIENDA GRID--*/
 
@@ -317,20 +317,70 @@ footer div a img{
     cursor: pointer;
 }
 
-/*--Multimedia--*/
+/*--Contactohtml--*/
 
-.fondomaingaleria{ 
-    width: 100%;
-    text-align: center;
-    background-image: url(../img/multimedia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.bodycontacto{
+    background-image: url(../img/fondonegronosotros.jpg);
 }
 
-.carousel-img{ 
+.form-register{ 
     text-align: center;
-    width: 50%;
+    width: 400px;
+    background: black;
+    padding: 30px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #f6a700;
+}
+
+.form-register h4{ 
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{ 
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+    font-size: 18px;
+}
+
+.form-register p{ 
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a:hover{ 
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons{ 
+    width: 100%;
+    background: #f6a700;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/*--Footer De todos los HTML--*/
+
+footer{ 
+    background-color: rgb(0, 0, 0);
+}
+
+footer div a img{ 
+    width:50px;
+    height:50px;
 }
 
