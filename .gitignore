@@ -1,1 +1,3 @@
-node_modules/git
+wireframe/
+node_modules/
+*.txt
