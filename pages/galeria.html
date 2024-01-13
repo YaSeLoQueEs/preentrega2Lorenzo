@@ -1,137 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Marinda - Galeria</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logonav/index.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/galeria.html">galeria</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Tienda
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">VIP</a></li>
-                                <li><a class="dropdown-item" href="#">Concesionarios</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../pages/tienda.html">Marinda Coins</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Buscar</button>
-                    </form>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo marinda"></a>
                 </div>
+                <ul class="navbar-menu" id="menu">
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html">Inicio</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./nosotros.html">Sobre Nosotros</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./tienda.html">Tienda</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./facciones.html">Facciones</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./galeria.html"  data-type="navbar-active">Galeria</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+                <button id="btn-toggle" class="navbar-btn">
+                    <div class="navbar-btn--container">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                    </div>
+                </button>
             </div>
         </nav>
     </header>
-    <main>
-        <main class="fondomaingaleria">
-            <section>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="carousel-img" src="../img/imgcar1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="carousel-img" src="../img/imgcar2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="carousel-img" src="../img/imgcar3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-            <section class="galeria-videos">
-                <div>
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/ZN8CVpaD8G4?si=jvRhTmxMpSbVvxf2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/4V9xBM5fbP4?si=CfhDZFFHclJxlhQM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/JfUlkOF5InM?si=t_AULt3-bhBU5o_2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </section>
-        </main>
+
+    <section class="hero" style="background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6222689759497548) 19%, rgba(0,0,0,0) 46%);">
+        <img src="../assets/img/about-us-page.jpg" alt="">
+    </section>
+
+    <main class="site-page site-page-np">
+        <h1 class="site-page__title">Actividades</h1>
+        <section class="about-us-section">
+            <div class="about-us-section__content">
+                <h4 class="about-us-section__content--title">Destacados del Mes</h4>
+                <p class="about-us-section__content--text">Crea contenido de las actividades que realizas dentro del servidor para que nuestros editores compartan tu contenido en nuestras redes sociales!</p>
+                <p class="about-us-section__content--quote">Recuerda que tenemos una amplia variedad de actividades dentro del servidor como motocross, bowling, buceo, pesca y mucho mas!</p>
+                <p class="about-us-section__content--text">A lo largo de nuestra trayectoria hemos descubierto que a los jugadores les atrae las actividades en coperativo para generar ingresos a sus cuentas, debido a esto hemos implementado varios scripts que logren esto!</p>
+                <img src="../assets/img/about-us-page-2.jpg" alt="">
+                <hr>
+                <h4 class="about-us-section__content--title">Recuerda que Nuestro servidor es de ROL y no de PVP</h4>
+                <p class="about-us-section__content--text">Adéntrate en nuestro servidor de FiveM de roleplay, un universo donde la narrativa cobra vida y la cooperación se erige como la piedra angular de la experiencia. En nuestra ciudad virtual, la competencia se transforma en colaboración mientras exploras una amplia gama de historias y relaciones interpersonales. </p>
+                <p class="about-us-section__content--text">Desde trabajos realistas hasta oportunidades empresariales, cada decisión que tomes contribuirá al tapiz único de tu propia narrativa. La trama se desarrolla a través de interacciones significativas con otros jugadores, ya sea como un comerciante ambicioso, un respetado oficial de policía, o un astuto abogado. Nuestra comunidad activa y dedicada se esfuerza por fomentar un entorno en el que la creatividad florezca y donde la construcción de relaciones sólidas sea tan importante como el progreso individual. ¡Únete a nosotros para descubrir un mundo de posibilidades donde el roleplay auténtico es la clave para forjar tu destino en nuestro servidor de FiveM!</p>
+            </div>
+        </section>
     </main>
 
+    <!-- Separator -->
+    <section class="separator">
+        <div class="separator__image" style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6222689759497548) 16%, rgba(0,0,0,0) 46%), url('../assets/img/separator2.jpg'); background-size: cover;"></div>
+        <div class="separator__container">
+            <h3 class="separator__container--text">Dale un vistazo a nuestro Catalogo</h3>
+            <a href="./discografia.html" class="separator__container--btn">Click aquí</a>
+        </div>
+    </section>
 
+    <main class="site-page site-page-np">
+        <section class="about-us-section">
+            <div class="about-us-section__content">
+                <h4 class="about-us-section__content--title">Actividades Ilegales</h4>
+                <p class="about-us-section__content--text">Adéntrate en las sombras y desata tu lado más intrépido en nuestro servidor de FiveM dedicado al roleplay, donde los roles ilegales te ofrecen una experiencia emocionante y desafiante.</p>
+                <p class="about-us-section__content--text">En las entrañas de la ciudad, las oportunidades para la vida delictiva son tan vastas como tu imaginación. Conviértete en un astuto ladrón que planea golpes épicos, un traficante maestro que controla el mercado negro, o un hábil hacker que opera desde las sombras.</p>
+                <p class="about-us-section__content--text">En nuestro servidor, el mundo ilegal es un lienzo en blanco para tus ambiciones más oscuras. Conviértete en el líder de una banda, participa en operaciones encubiertas, o crea una red de tráfico de bienes prohibidos. La ley siempre está al acecho, lo que agrega un nivel adicional de emoción y estrategia a cada movimiento.</p>
+                <p class="about-us-section__content--text">Únete a una comunidad vibrante donde la astucia y la audacia son recompensadas. Forja alianzas clandestinas, participa en subastas ilegales, y sumérgete en un submundo lleno de intriga y peligro.</p>
+                <p class="about-us-section__content--text">Si estás listo para desafiar los límites y escribir tu propia historia criminal, únete a nosotros y haz que tu marca en el caos del roleplay ilegal. ¡Elige tu camino en las sombras y descubre lo que la vida delictiva tiene reservado para ti en nuestro servidor de FiveM!</p>
+                <img src="../assets/img/about-us-page-3.jpg" alt="">
+            </div>
+        </section>
+    </main>
 
-    <footer> <!--Pie de Pagina, con un id asignado-->
-        <div>
-            <a href="https://www.instagram.com/marindacomunidad/" target="_blank"><img src="../img/redesfooter/instagram.png"
-                    alt="Logo Instagram"></a>
-            <a href="https://www.tiktok.com/@marindacityrp" target="_blank"><img src="../img/redesfooter/tiktok.png"
-                    alt="Logo Tiktok"></a>
-            <a href="https://www.youtube.com/channel/UCd3FAwgxn4t5CIBHml9_Gxg" target="_blank"><img
-                    src="../img/redesfooter/youtube.png" alt="Logo YouTube"></a>
-            <a href="https://discord.gg/tXs6f63bHx" target="_blank"><img src="../img/redesfooter/discord.png"
-                    alt="Logo Discord"></a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content__social-media">
+                <ul>
+                    <a href="https://www.instagram.com/marindaroleplay/" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-instagram"></i></li></a>
+                    <a href="https://www.youtube.com/channel/UCd3FAwgxn4t5CIBHml9_Gxg" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-youtube"></i></li></a>
+                </ul>
+            </div>
+            <hr class="footer-content__divider">
+            <div class="footer-content__info">
+                <ul class="footer-content__info--menu">
+                    <a href="#"><li>Ayuda</li></a>
+                    <a href="#"><li>Privacidad</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>&copy; Copyright 2024 - Marinda Roleplay  |  Diseñada por <a href="https://github.com/YaSeLoQueEs" target="_blank">Lorenzo Tessore</a></p>
         </div>
     </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
